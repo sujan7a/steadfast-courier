@@ -1,0 +1,32 @@
+{
+    "name": "sujan7a/steadfast-courier",
+    "description": "Laravel package for Steadfast Courier API",
+    "type": "library",
+    "autoload": {
+        "psr-4": {
+            "Sujan7a\\SteadfastCourier\\": "src/"
+        }
+    },
+    "require": {
+        "php": ">=7.4",
+        "illuminate/support": "^8.0|^9.0|^10.0",
+        "guzzlehttp/guzzle": "^7.0"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Sukanta Roy Sujan",
+            "email": "sujan7a@gmail.com"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Sujan7a\\SteadfastCourier\\SteadfastCourierServiceProvider"
+            ],
+            "aliases": {
+                "SteadfastCourier": "Sujan7a\\SteadfastCourier\\Facades\\SteadfastCourier"
+            }
+        }
+    }
+}
